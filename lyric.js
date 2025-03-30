@@ -76,6 +76,8 @@ window.onload = function main() {
         player6: document.querySelector(".player6"),
         lyric7: document.querySelector(".lyric7"),
         player7: document.querySelector(".player7"),
+        lyric8: document.querySelector(".lyric8"),
+        player8: document.querySelector(".player8"),
     };
     const lrc1 = `
     [00:00.00]1: 那个行， 然后那个我觉得是那个说一下这个3:3这场比赛 好吧，嗯，我3:3。
@@ -171,45 +173,51 @@ window.onload = function main() {
     }
 
     const lrc5 = `
-    [00:00.00]1: 嗯，那今天我们来聊聊一个很重要的话题， 那就是约翰纳什的非合作博弈，
-    [00:05.46]2: 没错， 这篇论文可以说奠定了现代博弈论的整个基础。
-    [00:09.78]1: 是的， 纳什在论文当中提出了非合作博弈理论， 呃，就是研究多于两人且无法达成共识的多方参与者之间的决策问题。
-    [00:19.51]2: 那听着就是我们日常生活的很多挑战嘛， 没有合作没有沟通，完全就是自我决策。
-    [00:25.28]1: 嗯，那纳什呢，是将合作博弈的理论进行了对比， 就像合作博弈的代表人物冯诺伊曼和摩根斯坦提出理论， 他们假设玩家之间是可以沟通的，可以进行信息交流的。 而纳什呢， 他就假设参与的人之间是没有沟通的， 每个人都是独立行动的。
-    [00:43.86]2: 那这样听上去就是孤独的啊， 但这样看起来也很真实啊。
-    [00:47.26]1: 是的， 那这个论文的中心思想就是均衡点， 就是在这样的状态下， 每个参与者都没有办法通过改变自己的策略而获得更大的收益，
-    [00:57.11]2: 也就是每个人的选择都是对其他人的策略都是最优的对吧？
-    [01:01.17]1: 没错，你听得可真透啊。 那这就是说在每个参与者的策略都是固定的， 在这样的情况下，每个人都是最大化其收益，
-    [01:09.72]2: 那混合策略指的是什么呢？
-    [01:11.45]1: 混合策略就是每个参与者都是以一定的概率去随机选择不同的纯策略， 而不是一直坚持同一个策略。   
-    [01:20.00]2: 哦，那这个就比较好理解，呃，就像我们在玩扑克牌， 那那么我们在选择策略的时候也要变化才对。
-    [01:26.65]1: 没错。 然后还有一个重要的点就是有限博弈， 就是纳什的理论是主要适用于有限博弈的， 也就是参与的玩家是有限的， 玩家策略也是有限的。
-    [01:37.65]2: 这在现实世界中就很实用啊，特别是一些商业竞争啊，
-    [01:41.32]1: 那我们再来看看非合作博弈纳什均衡点证明。 纳什证明了每一个有限的非合作博弈至少会有一个均衡点， 那么这个定理的建立是建立在布劳威尔不动点定理之上。
-    [01:54.34]2: 这个布劳威尔不动点定理听上去就有点复杂，就像是一门数学魔法，
-    [01:59.32]1: 那还是有点复杂， 那纳什也在讨论对称博弈， 就是指参与的博弈双方和各自的策略是可以相互互换的， 但游戏结构是不变的。
-    [02:09.78]2: 诶，这样听起来就感觉博弈就像一面镜子， 就是对称和平等的。
-    [02:14.75]1: 没错， 那他呢，就在讨论了对称博弈之后，证明了对称博弈至少会有一个对称均衡点，
-    [02:21.67]2: 那这个呢，应该是对于我们理解博弈的一种新的思维方式吧。
-    [02:25.87]1: 嗯，那再来看看可解性， 那纳什定义了一个可解博弈和可解博弈的均衡点的集合， 如果互换性条件成立， 那么可解博弈的均衡点的集合呢，就是可解博弈的解，
-    [02:39.56]2: 那这个听起来就是一种理想的平衡方案？
-    [02:42.30]1: 没错， 那他还定义了一个均衡策略集， 就是每个参与者的均衡策略集呢，呃，就是某些均衡点中使用的策略集， 那么这个均衡策略集呢，就是在这个博弈中的可解策略集。
-    [02:55.41]2: 呃，这个均衡策略集是什么样的呢？
-    [02:57.88]1: 那在可解博弈中， 每个参与者的均衡策略集呢，都是其混合策略空间的一个凸多面体子集。
-    [03:05.69]2: 哦，那这个听起来就是让博弈论的数学性质变得非常明确啊。
-    [03:10.27]1: 没错。 那纳什还在讨论了策略的支配， 就是一个策略，如果始终优于另一个策略， 不管是其他策略怎么样， 那它就是一个支配策略。 那在每一个均衡点呢，是不可能包含任何被支配策略的。
-    [03:25.00]2: 那这个听起来就感觉就像淘汰那些不必要的步骤， 只留下最优最有效的方案。
-    [03:30.69]1: 没错， 他通过一个具体的例子三人扑克游戏， 这个例子也是博弈论中非常经典的一个例子， 就来来解释这些理论的应用。
-    [03:39.47]2: 哦，那这个例子呢，确实会让复杂的东西变得容易理解。 希望以后能有更多的这种例子。
-    [03:45.77]1: 那更好理解， 纳什还指出了这个非合作博弈理论在合作博弈分析中的应用， 他用动态的方法，把合作的问题转化成更大规模的非合作问题， 那就比较容易处理了。
-    [03:59.40]2: 嗯，嗯， 这种转换也很巧妙， 为这个事情提供了新的视角。
-    [04:03.85]1: 嗯，总结一下， 纳什的工作其实对博弈论影响非常大， 一方面他引入了这个均衡点的概念， 另一方面他将这个概念推广到各种不同的环境。 不仅是小型的博弈， 其实在很多其他领域， 像经济学， 政治学和心理学， 社会学，都有一些应用。 而且它其实给我们提供了一个理解社会互动的新视角， 比如说在政治里面， 就是纳什均衡点。其实帮助解释了很多政治行为， 也解释了很多国家和集团之间的合作和冲突。
-    [04:36.64]2: 嗯嗯，对。那这个纳什的论文其实也引发了后续的很多工作，
-    [04:41.34]1: 嗯，
-    [04:42.20]2: 嗯。那当然，我们今天的这一期，其实只是想稍微介绍一下纳什均衡点， 也带大家简单了解一下纳什的这个研究。 对，简单的理论，却有着无限的延展空间， 所以还是非常期待在未来的生活中，或者是在更多的学科领域当中， 希望有更多有趣的研究出现，
-    [04:59.92]1: 是的，
-    [05:00.50]2: 嗯，好，那今天的这一期就先到这里了，
-    [05:03.41]1: 嗯，
+    [00:00.00]1: 欢迎收听今天的播客， 哎，我们今天要聊点什么呢？
+    [00:02.50]2: 嗯，今天我们来聊一个很有意思的话题，就是，博弈论。
+    [00:06.50]1: 博弈论？ 这个，这个听起来有点高大上啊，能不能用我们普通人能听懂的话来解释一下呢？
+    [00:12.00]2: 没问题。 其实，博弈论，这个，就是研究人们怎么做决策的。 想象一下啊， 你跟别人下棋，打牌，或者，呃，公司之间竞争，这些其实都是博弈。每个人都想赢，对吧？
+    [00:24.00]1: 嗯。
+    [00:24.50]2: 但是每个人的行动，又会互相影响。 博弈论，就是想找到一种，呃， 最好的策略，让你在跟别人互动的时候，能够得到最好的结果。
+    [00:33.30]1: 哦，有点像，呃，那种什么三十六计的感觉？
+    [00:37.00]2: 哈哈，有点那个意思。不过，博弈论更，更科学一些，它会用数学模型来分析这些问题。
+    [00:42.70]1: 哇，数学模型。 听起来很厉害。 那我们今天是不是要聊一个很厉害的博弈论文章？
+    [00:48.30]2: 对。我们今天要聊的是一篇，这个，经典论文，叫，非合作博弈。
+    [00:52.60]1: 非合作博弈？ 听名字就感觉和一般的博弈不太一样呢。   
+    [00:57.00]2: 是的。这篇论文的作者是约翰纳什，一位非常著名的数学家。大家可能都看过电影， 美丽心灵 ，讲的就是他的故事。
+    [01:05.00]1: 哦，原来是他，我知道这部电影。那这个，非合作博弈，它和合作博弈有什么区别呢？
+    [01:10.40]2: 嗯， 这么说吧，合作博弈呢，就是大家可以商量着来，可以达成协议，一起合作，共同对敌。 比如几家公司可以组成联盟，一起来，呃，垄断市场，这就是合作博弈。
+    [01:21.00]1: 哦， 那非合作博弈呢？
+    [01:23.00]2: 非合作博弈，就是大家各玩各的，谁也不理谁，不能商量，也不能签合同，一切都靠自己。 每个人都只想着，让自己赢，或者得到最好的结果。
+    [01:31.00]1: 哦，我感觉现实生活中好像更多的是非合作博弈呢。 像我们平时，呃，买东西砍价啊，或者找工作谈工资啊，好像都是这种，呃，非合作的情况。
+    [01:41.50]2: 对。纳什的这篇论文，就是提出了一个，呃，非常重要的概念，来研究这种非合作博弈的情况，这个概念叫做均衡点。
+    [01:48.40]1: 均衡点？听起来有点抽象。
+    [01:50.43]2: 其实不难理解。我们来举个例子， 假设， 你和我玩石头剪刀布。 你出什么，我出什么，是不是都有可能？
+    [01:57.00]1: 嗯。
+    [01:57.80]2: 但是，如果，我们都随机出，每次都随便出石头，剪刀，或者布，而且概率都一样，都是三分之一。 这种情况下，谁也占不到便宜，对吧？
+    [02:05.62]1: 对，长期来看，输赢应该是差不多的。
+    [02:08.55]2: 嗯，这就是一个均衡点。 在这个点上，任何一方，单方面改变策略，都不会让自己更好。 你要是总出石头，我肯定就总出布，你反而输得更多，对吧？
+    [02:17.28]1: 是这样。
+    [02:18.10]2: 所以，均衡点，就是一种，大家都很，都很稳定的状态。 谁也没有动力去改变自己的策略。
+    [02:24.10]1: 那这个均衡点，是不是意味着大家就一定，呃，都赢了，或者都输了？
+    [02:29.30]2: 不一定。均衡点只是说，在这个状态下，大家都没有改变的动机。 至于结果是好是坏，那要看具体的博弈是什么样的。 有的博弈，均衡点可能对大家都好，有的可能对大家都不好，也有的可能对一方好，对另一方不好。
+    [02:41.80]1: 哦，我大概明白了。 那，这篇论文是不是证明了，所有这样的，呃，非合作博弈，都存在均衡点呢？
+    [02:49.10]2: 对。 纳什证明了，在有限非合作博弈中，至少存在一个均衡点。 这里的，有限，指的是，每个人的选择是有限的。 就像石头剪刀布，只有三种选择，不是无限多种。
+    [02:59.57]1: 哦，那这个证明是不是很难啊？
+    [03:01.50]2: 相当难。 他用了一个叫做布劳威尔不动点定理的数学工具来证明的。 这个定理，呃，我们普通人可能不太好理解， 它大概的意思是说， 在一个，呃，封闭的空间里， 如果你有一个连续的变换， 那一定有一个点，在这个变换下是不动的。
+    [03:17.70]1: 呃，还是不太明白，不过听起来很厉害的样子。
+    [03:20.50]2: 没关系，我们知道结论就行了。 纳什的这个证明，非常重要， 因为它告诉我们， 即使在非合作的情况下， 我们也可以，呃，预测，或者分析，大家最后会怎么做。
+    [03:29.80]1: 嗯。感觉博弈论很有用，它不仅仅是研究打牌，下棋。
+    [03:34.16]2: 对，可以应用到各种领域。比如说，呃，公司之间的竞争，可以分析他们怎么定价，怎么做广告。 国际关系，可以分析，呃，国家之间的谈判， 还有，呃， 拍卖， 怎么设计拍卖规则，等等。
+    [03:46.00]1: 听你这么一说，感觉生活中处处都是博弈啊。
+    [03:48.70]2: 是啊。纳什这篇论文还提到了，博弈的对称性。有些博弈是对称的，这样分析起来就更简单。
+    [03:55.35]1: 什么是博弈的对称性？
+    [03:57.00]2: 简单来说，如果一个博弈中，参与者的地位是相同的，他们的选择和收益都一样，那么这个博弈就是对称的。纳什证明了，任何有限博弈都存在一个对称均衡点。
+    [04:07.71]1: 哇，今天真是学到了不少东西，感觉博弈论真是太有意思了。
+    [04:11.35]2: 是啊，博弈论是一个非常有意思，而且非常重要的领域。 纳什的这篇论文，只是一个开始， 后来有很多学者，在这个基础上，做了很多更深入的研究。
+    [04:21.11]1: 我觉得这个非合作博弈的思想，其实，呃，对我们普通人也很有启发。 以后我们在做决策的时候，也可以想想，别人会怎么做， 然后，呃，找到一个对自己最有利的策略。
+    [04:31.90]2: 是啊， 这就是博弈论的魅力所在。 它能帮助我们，更理性地思考问题， 做出更好的决策。
+    [04:38.50]1: 是的呢，好了，我们今天的节目就到这里了，感谢大家的收听，我们下期再见。
     `
     const lyrics5 = parseLyric(lrc5);
     dom.lyric5.innerHTML = lyrics5[0].text;
@@ -220,9 +228,78 @@ window.onload = function main() {
         if (index == null) return;
         dom.lyric5.innerHTML = lyrics5[index].text;
     }
-    
 
     const lrc6 = `
+    [00:00.00]1: Welcome back to the podcast, everyone. Today we're diving into the world of, uh, A I, specifically the 2024 Nobel Prize in Physics, which actually went to two pioneers in machine learning.
+    [00:11.00]2: Yeah, it's pretty exciting, right? They recognized, uh, John Hopfield and Geoffrey Hinton for their work on artificial neural networks. It's kinda like the foundation for a lot of the A I we see today.
+    [00:23.70]1: Okay, so, artificial neural networks. That sounds complicated. Can you break that down for us, like, what are they, basically?
+    [00:29.60]2: Sure. So, imagine your brain, right? It's made up of billions of these tiny things called neurons, all connected to each other.
+    [00:37.20]1: Right.
+    [00:37.70]2: And they send signals back and forth, and that's how we, like, think and remember things. An artificial neural network is kind of a computer's attempt to, uh, mimic that.
+    [00:46.70]1: Okay.
+    [00:47.10]2: It's a bunch of, you know, digital neurons connected in a specific way, and they can learn to do things by adjusting the strengths of those connections.
+    [00:55.40]1: So it's like a, a digital brain, almost?
+    [00:57.40]2: Yeah, you could think of it that way, it's a simplified model, but it's inspired by how our brains work. It is not exactly the same, but it takes a cue from nature, you know.
+    [01:07.50]1: So, what did Hopfield do that was so, uh, Nobel Prize worthy?   
+    [01:11.20]2: Well, Hopfield, he came up with this thing called the Hopfield network. And it's all about associative memory.
+    [01:16.50]1: Associative memory, like, remembering things based on associations?
+    [01:19.90]2: Exactly. Like, you see part of a picture, and your brain instantly fills in the rest, right?
+    [01:24.10]1: Yeah.
+    [01:24.60]2: Or you hear a few notes of a song, and you know the whole song. That's associative memory.
+    [01:28.90]1: Okay, so his network could do that?
+    [01:30.40]2: Yeah, He figured out a way to design a network that could store patterns, like images or, um, sequences of data. And then, if you gave it an incomplete or noisy version of that pattern, it could retrieve the complete, clean version.
+    [01:42.30]1: Wow, that's pretty cool. So how does it actually, like, work? Is it magic?
+    [01:46.30]2: No magic, haha, it's physics. He used ideas from, uh, physics, actually. Specifically, how atoms behave in materials. He imagined the digital neurons like atoms and their status is like a material's atomic spin.
+    [01:59.00]1: Okay, now you are losing me again.
+    [02:00.70]2: Okay, so, think of it like this, in some materials, all the tiny atomic magnets like to line up, right?
+    [02:06.10]1: Uh huh.
+    [02:06.60]2: That gives the material certain properties. Hopfield used a similar idea. He created a network, and when they're, you know, communicating, it looks for the lowest energy state. The stored memories are like those low energy states
+    [02:18.80]1: So, the incomplete image is like a, a nudge towards the, uh, the full memory, and the network just kind of falls into place?
+    [02:24.30]2: Exactly. It's like the network is relaxing into the closest stored memory. Like rolling a marble down a hill, and it settles in a valley, right?
+    [02:31.90]1: Okay, I think I'm getting it. The valleys are memories. That's a pretty neat analogy. So, what about, uh, Hinton? What was his contribution?
+    [02:39.00]2: Hinton built on Hopfield's work. He developed something called the Boltzmann machine.
+    [02:43.60]1: Boltzmann machine. Sounds even more intimidating.
+    [02:45.70]2: It's not so bad. It's another type of neural network, but it's, uh, better at learning complex patterns from data. It uses, like, statistical physics, you know, probabilities, and, um, randomness, to help it learn.
+    [02:57.50]1: Randomness? How does that help?
+    [02:59.10]2: Well, it helps the network explore different possibilities, you know. It's like, it's not just stuck in one way of thinking. It can try out different, um, configurations of those connections between the neurons, and find the ones that work best for representing the data.
+    [03:13.00]1: So, it's like, experimenting to find the, uh, optimal solution?
+    [03:16.30]2: Yeah, exactly. And, importantly, it can learn to identify the important features in the data itself. Like, if you're showing it pictures of cats, it learns what makes a cat a cat, without you having to tell it, you know, look for pointy ears or whatever.
+    [03:28.80]1: That's really the key to machine learning, isn't it? The machine figuring things out on its own?
+    [03:32.50]2: Right. And that is super important. Before, you had to program a machine to look for specific details, but Hinton showed that it could kind of figure it out by itself.
+    [03:40.50]1: So like teaching a kid with lots of examples, instead of a rule book?
+    [03:43.80]2: Yeah that's a great way to put it. Just keep feeding examples, and they will learn eventually. And, you know, Hinton's work, it really laid the groundwork for a lot of the deep learning techniques that are, um, so powerful today.
+    [03:54.80]1: Deep learning, that's the stuff that powers, like, image recognition and, uh, language translation, right?
+    [04:00.00]2: Yeah, exactly. And a whole bunch of other things. It's a really big deal.
+    [04:02.80]1: So, these two guys, working decades ago, their work is still relevant today?
+    [04:06.60]2: Absolutely. Their ideas, they're fundamental. Of course, things have advanced a lot since then, but, um, their work is kind of like the, the foundation that everything else is built on. It's like how classical mechanics is to modern physics. It's a different era, but some fundamentals never expire.
+    [04:22.10]1: And it's, kind of, cool that it's, uh, all based on this, like, analogy to how the brain works, you know?
+    [04:26.40]2: Yeah, it is. It's a, it's a great example of how, uh, different fields of science can inspire each other. Physics, biology, computer science, all coming together.
+    [04:35.00]1: So where does their work, uh, affect us now? Like, practically?
+    [04:38.00]2: Oh, everywhere, potentially. Material science, for one. It's influencing how we understand and, um, design new materials. And, you know, all those A I applications, they're all related in some way.
+    [04:48.10]1: Makes sense. It's like, they laid the groundwork, and now everyone's building on it, making bigger and better, and sometimes scarier, things.
+    [04:54.70]2: Right? It's a very active area, even today. People are still trying to, um, make these networks more efficient, you know, use less energy, less data, make them less biased, all that stuff.
+    [05:04.20]1: Less biased? Is that, um, a reference to some of the problems we hear about with A I, like, making unfair decisions?
+    [05:10.00]2: Yeah, exactly. If the data you train the network on has biases in it, the network will learn those biases, right? So, that's a big challenge, making sure these systems are, uh, fair and equitable.
+    [05:19.50]1: That makes sense. So it's not just about making them smarter, but also making them, uh, ethically sound, I suppose.
+    [05:24.40]2: Absolutely. It's a huge area of research, and it's something we need to, you know, really pay attention to as A I gets more and more powerful.
+    [05:31.30]1: Well, this has been incredibly enlightening. So, basically, we owe a lot to these two Nobel Prize winners for the A I we, uh, interact with every day, even if we don't realize it.
+    [05:40.50]2: Yeah, they really were pioneers. And the field of machine learning keeps growing fast, so who knows what the future will look like, you know?
+    [05:46.50]1: It is exciting and a little bit scary all at the same time. Thanks for, uh, walking us through all of this. It really helps to understand the, the basics behind all this, you know, complex technology.
+    [05:57.10]2: No problem. Glad to do it.
+    [05:58.50]1: And that's all the time we have for today. Join us next time as we continue to explore the fascinating world of science and technology.
+    `
+    const lyrics6 = parseLyric(lrc6);
+    dom.lyric6.innerHTML = lyrics6[0].text;
+    dom.player6.ontimeupdate = () => {
+        const time = dom.player6.currentTime;
+        const index = syncLyric(lyrics6, time);
+
+        if (index == null) return;
+        dom.lyric6.innerHTML = lyrics6[index].text;
+    }
+    
+
+    const lrc7 = `
     [00:00.00]1: 我觉得啊，就是经历了这么多年的经验， 就是补剂的作用就是九分的努力， 十分之一的补剂。
     [00:05.55]2: 嗯，
     [00:05.90]1: 选的话肯定是九分更重要，但是我觉得补剂它能够让你九分的努力更加的有效率，更加的避免徒劳无功。
@@ -232,18 +309,18 @@ window.onload = function main() {
     [00:25.43]1: 嗯，
     [00:25.90]2: 然后我每次用补剂的时候，我就会更加努力。
     `
-    const lyrics6 = parseLyric(lrc6);
-    dom.lyric6.innerHTML = lyrics6[0].text;
+    const lyrics7 = parseLyric(lrc7);
+    dom.lyric7.innerHTML = lyrics7[0].text;
     
-    dom.player6.ontimeupdate = () => {
-        const time = dom.player6.currentTime;
-        const index = syncLyric(lyrics6, time);
+    dom.player7.ontimeupdate = () => {
+        const time = dom.player7.currentTime;
+        const index = syncLyric(lyrics7, time);
 
         if (index == null) return;
-        dom.lyric6.innerHTML = lyrics6[index].text;
+        dom.lyric7.innerHTML = lyrics7[index].text;
     };
 
-    const lrc7 = `
+    const lrc8 = `
     [00:00.00]1: 谢谢 这是过年了啊。
     [00:01.41]2: 就是啊。
     [00:02.20]1: 啊 我们老哥俩给大伙拜年。
@@ -257,15 +334,15 @@ window.onload = function main() {
     [00:12.37]1: 一个是您得了一个影帝。
     [00:14.21]2: 哎哟呵，您太捧我了。
     `
-    const lyrics7 = parseLyric(lrc7);
-    dom.lyric7.innerHTML = lyrics7[0].text;
+    const lyrics8 = parseLyric(lrc8);
+    dom.lyric8.innerHTML = lyrics8[0].text;
     
-    dom.player7.ontimeupdate = () => {
-        const time = dom.player7.currentTime;
-        const index = syncLyric(lyrics7, time);
+    dom.player8.ontimeupdate = () => {
+        const time = dom.player8.currentTime;
+        const index = syncLyric(lyrics8, time);
 
         if (index == null) return;
-        dom.lyric7.innerHTML = lyrics7[index].text;
+        dom.lyric8.innerHTML = lyrics8[index].text;
     };
 
 
