@@ -78,6 +78,8 @@ window.onload = function main() {
         player7: document.querySelector(".player7"),
         lyric8: document.querySelector(".lyric8"),
         player8: document.querySelector(".player8"),
+        lyric9: document.querySelector(".lyric9"),
+        player9: document.querySelector(".player9"),
     };
     const lrc1 = `
     [00:00.00]1: 那个行， 然后那个我觉得是那个说一下这个3:3这场比赛 好吧，嗯，我3:3。
@@ -345,5 +347,90 @@ window.onload = function main() {
         dom.lyric8.innerHTML = lyrics8[index].text;
     };
 
+
+    const lrc9 = `
+    [00:00.00] 1: Okay are we recording. Check check one two.
+    [00:02.75] 2: Sounds like it. Yep getting the levels here too.
+    [00:04.90] 1: Alright welcome back everyone to another episode.
+    [00:07.25] 2: Great to be back. Today I thought we could chat about something universally loved.
+    [00:10.97] 1: Comfort food.
+    [00:12.15] 2: Ooh nice one. Perfect topic as the weather gets a bit cooler maybe. Or just anytime really. Who doesnt love comfort food.
+    [00:18.80] 1: Its like a culinary security blanket. Exactly. A security blanket thats a good way to put it. So what does comfort food mean to you.
+    [00:31.30] 2: Like whats the first thing that pops into your head. For me its probably something warm. Something nostalgic. Often cheesy. Maybe macaroni and cheese. The really gooey stovetop kind sometimes. Or the baked version with that crunchy breadcrumb topping. Both have their place.
+    [00:45.90] 1: Okay solid choice. Mac and cheese is definitely up there on the comfort food list for lots of people. The crunchy topping is key for the baked version I think. Adds that texture contrast.
+    [00:56.20] 2: Totally. Texture is huge in comfort food isnt it. Creamy gooey crunchy chewy. Its all part of the experience.
+    [01:03.00] 1: For me its maybe slightly different initially. I think of soup. Like a really hearty chicken noodle soup with thick noodles. Or that classic tomato soup with a grilled cheese sandwich for dipping. The soggier the bread gets the better.
+    [01:16.50] 2: Oh yeah soup and grilled cheese. That is peak comfort. Especially on a rainy day or when youre feeling under the weather. Its like a warm hug from the inside. Simple but so effective.
+    [01:26.00] 1: Totally. I think nostalgia plays a huge part right. Often its stuff we ate as kids or things our parents or grandparents made. The association is powerful.
+    [01:34.40] 2: Definitely. My grandma used to make this amazing beef stew. Slow cooked all day in this big orange pot. The whole house would smell incredible. Potatoes carrots tender beef. Eating that now instantly takes me back to her kitchen warm and safe.
+    [01:46.90] 1: See. Its those connections. Its not just about the taste its the feeling it evokes. The memories wrapped up in the smell and flavor. Do you cook that stew yourself now.
+    [01:55.60] 2: I try. I have her recipe written down somewhere on a splattered index card. Its never quite exactly the same though is it. Maybe its the memory thats the secret ingredient. Or maybe its just that I dont use enough butter.
+    [02:06.60] 1: Haha probably both. Maybe. Or maybe grandmas just have magic powers. I feel the same about my moms lasagna. Ive followed her recipe exactly step by step but its always missing something. Some magic touch.
+    [02:18.60] 2: Lasagna. Another great one. All those layers of pasta and rich meat sauce and béchamel or ricotta. And tons of cheese. Its a project though. Not exactly a quick weeknight meal unless youre using leftovers.
+    [02:30.50] 1: No definitely not. More of a weekend cooking project. Which brings up a point. Do you actually cook your comfort foods often or are they more of a special occasion thing. Or something youd rather order in when the craving hits hard.
+    [02:42.00] 2: Thats a good question. For something like mac and cheese I might make a quick version sometimes from a box even dont judge me. But the proper baked kind maybe less often. Things like stew or lasagna are definitely weekend projects. Sometimes if Im feeling lazy but craving comfort I'll just order a really good pizza or some thai green curry.
+    [03:00.50] 1: No judgement on boxed mac and cheese. Sometimes its exactly what you need. Yeah takeout comfort food is a whole category in itself. Pizza is a huge one globally right. Or chinese food containers spread out on the coffee table. That feels like comfort.
+    [03:12.80] 2: Exactly. The effort level matters. Comfort food should be comforting to eat not stressful to make. Unless the process of making it is comforting for you I guess. Like the chopping or stirring.
+    [03:23.00] 1: Sometimes it is. Like kneading dough for bread or stirring a risotto slowly watching it transform. That repetitive motion can be quite therapeutic meditative almost. But other times you just want the result immediately. The craving is urgent.
+    [03:35.80] 2: Risotto. Is that comfort food for you. It always feels a bit restaurant fancy to me.
+    [03:40.20] 1: It can be. Like a simple mushroom risotto or parmesan. Its creamy and warm and satisfying. Maybe not traditional childhood comfort food but it hits the spot for me sometimes. Maybe its adult comfort food.
+    [03:51.20] 2: Adult comfort food I like that. What about the psychology of it. Why do these specific foods make us feel so good. Is it just memory or something else.
+    [03:58.80] 1: I think its a mix. Memories are huge linking back to feelings of safety love care. But also physiologically these foods often trigger release of endorphins or serotonin. Carbs and fats can literally make our brains feel good temporarily.
+    [04:11.20] 2: Right. That makes sense. So its a learned association combined with a bit of brain chemistry. No wonder its so powerful when youre stressed or sad.
+    [04:18.80] 1: Exactly. Its a coping mechanism sometimes. Which brings us to the health aspect. People sometimes think comfort food equals unhealthy food. And feel guilty about it.
+    [04:28.00] 2: Well. Lets be honest a lot of classic comfort foods arent exactly health foods. Mac and cheese lasagna fried chicken mashed potatoes swimming in gravy. They tend to be high in carbs fat salt sugar sometimes.
+    [04:39.40] 1: True. But I think its about balance and context. You dont eat it every single day hopefully. And maybe comfort food can be healthy too. Like that chicken noodle soup we mentioned or a hearty lentil soup. Or even just a perfect piece of whole wheat toast with good butter or avocado.
+    [04:53.80] 2: Toast with butter. Simple perfection. Okay yeah you have a point. Maybe its more about the feeling than the specific nutritional profile. Though the high carb high fat stuff does seem particularly comforting biologically maybe. Its efficient fuel.
+    [05:06.80] 1: Probably. Instant energy boost or something. That satisfying fullness. Do your comfort foods change with the seasons. You mentioned cooler weather earlier.
+    [05:15.00] 2: Definitely. Winter is all about stews casseroles chili baked pasta dishes shepherd's pie. Things that warm you up from the inside out. Roasts too. A good Sunday roast with all the trimmings yorkshire puddings crispy potatoes.
+    [05:27.20] 1: Mmm Sunday roast. Yes. Gravy is key. Lots of gravy. You cant have too much gravy. And those yorkshire puddings soaking it up.
+    [05:34.90] 2: Essential. In summer though Im not really craving a heavy stew unless its a weirdly cold rainy day. Maybe comfort food shifts to something like burgers and hot dogs on the grill. Or creamy potato salad. Or even just a really good ice cream sundae loaded with toppings.
+    [05:49.00] 1: Ice cream sundae. Good one. Or maybe just a perfect scoop of really good quality ice cream. Yeah summer comfort food is different. Maybe lighter but still satisfying. Corn on the cob dripping with butter and salt.
+    [05:59.90] 2: Oh yes. Or watermelon eaten outside juice dripping everywhere. Just simple pleasures sometimes. What about comfort desserts in general. Pies crumbles puddings.
+    [06:08.80] 1: Oh absolutely. Apple pie or crumble with custard or ice cream. Chocolate lava cake. A warm brownie. Rice pudding maybe. Things that feel cozy and often sweet.
+    [06:18.00] 2: Rice pudding. Another nostalgia bomb for me. My mum used to make it with a blob of jam in the middle. What about comfort drinks. Hot chocolate counts right.
+    [06:25.80] 1: Definitely hot chocolate. Especially with whipped cream or marshmallows. Or maybe a specific type of tea. Or even warm milk for some people.
+    [06:33.60] 2: Yeah true. A milky tea or chai latte. It’s that warmth again. Do you have any funny cooking stories related to trying to make comfort food. Beyond the dumplings.
+    [06:42.20] 1: Oh plenty. I once tried to make dumplings like my aunt used to make. They looked so easy when she did it. Mine ended up as a sort of gluey paste floating in broth. Total disaster. They were deeply uncomfortable dumplings. Maybe more disturbing than comforting.
+    [06:56.50] 2: Uncomfortable dumplings. I tried making bread once during that big sourdough craze a while back. My starter never really got started properly. I think I killed it. And the one loaf I attempted could have been used as a doorstop. It was rock solid dense enough to sink ships.
+    [07:10.20] 1: The sourdough struggle was real. Some people made beautiful loaves others made bricks. I think comfort food sometimes involves accepting imperfection too. Maybe my gluey dumplings were comforting in their own failure way. They made me laugh eventually.
+    [07:22.80] 2: Maybe. Or maybe you just ordered pizza afterwards feeling slightly defeated but also relieved.
+    [07:28.00] 1: Definitely ordered pizza afterwards. Zero regrets. Are you someone who likes to experiment with comfort food recipes or do you stick rigidly to the classics. Like absolutely no variations allowed.
+    [07:38.80] 2: I mostly stick to the classics. If Im making mac and cheese Im making the recipe I know and love. Im not adding truffle oil or lobster or kale or whatever fancy stuff people do. Comfort food for me is about familiarity predictability.
+    [07:51.50] 1: I get that. Im a bit more adventurous sometimes. Like I'll try a different spice blend in my chili maybe smoked paprika. Or add some extra vegetables to a soup to make myself feel slightly healthier. But I agree the core needs to stay familiar. You dont want to mess with the fundamental comfort factor too much.
+    [08:07.80] 2: Exactly. Dont mess with the mac and cheese. What about comfort foods from other cultures. Do you have any favorites that arent from your own background. We mentioned curry earlier.
+    [08:16.20] 1: Oh definitely. Ramen is a big one for me. A big steaming bowl of rich Tonkotsu ramen on a cold day. Its incredibly comforting the broth the noodles the toppings. Or pho. That fragrant clear broth with herbs and noodles.
+    [08:28.50] 2: Yes pho is amazing. So restorative especially if you feel a cold coming on. Indian food too like a good dal makhani or butter chicken with fluffy naan bread. That feels very comforting and satisfying to me. Or even just plain steamed rice sometimes.
+    [08:41.80] 1: Totally. Creamy sauces warm spices lots of flavor. Its interesting how many cultures have their own version of comforting carbs and sauce or broth. Pasta noodles rice dumplings congee polenta.
+    [08:53.00] 2: Its a universal need I think. That feeling of being nourished and cared for through food. It often involves carbs because carbs are life. And fat carries flavor makes things satisfying.
+    [09:02.50] 1: Carbs are indeed life. Do you find comfort food is better when shared. Or is it sometimes a solo indulgence that feels almost secretive.
+    [09:09.80] 2: It can be both. Sometimes curling up alone on the sofa with a bowl of something delicious maybe something slightly embarrassing like instant noodles is exactly what you need. A little self care moment no judgement.
+    [09:21.00] 1: True. Like after a hard day at work just you and your bowl of pasta or ice cream straight from the tub. Private comfort.
+    [09:26.80] 2: Exactly. But sharing it is great too. Like making a big lasagna or a pot of chili for friends or family. Watching people enjoy food youve made is incredibly comforting in itself. It feels good to nurture people.
+    [09:38.50] 1: It really is. That communal aspect of eating together sharing stories passing dishes around the table. Thats a huge part of comfort for many people I think. The meal is the centerpiece for connection and belonging.
+    [09:49.20] 2: Yeah. Sunday dinners family gatherings potlucks holiday meals. They often revolve around those classic comforting dishes that everyone loves and expects. It creates tradition.
+    [09:58.00] 1: It makes you feel grounded connected. Its more than just fuel its history and love on a plate sometimes. Okay so final question. If you could only eat one comfort food for the rest of your life what would it be. Tough one seriously consider it.
+    [10:10.00] 2: Oh wow. That is tough. Only one forever. Hmm. For sheer versatility maybe pizza. You can change the toppings endlessly almost. But for pure unadulterated soul comfort. Maybe mashed potatoes. Creamy buttery fluffy. You can have them plain with gravy with cheese with butter herbs garlic.
+    [10:26.20] 1: Mashed potatoes are a strong contender. Very adaptable. They go with so many things or stand alone. I think. I might go with soup again. A really good versatile soup base that I could add different things to daily. Like a creamy tomato soup base. Add pasta add rice add beans add croutons add grilled cheese on the side.
+    [10:43.50] 2: Okay soup is a good strategic choice. Very sensible covers lots of bases. Mine was pure feeling potato power.
+    [10:50.00] 1: Nothing wrong with that. Comfort food is all about feeling. Well this has made me incredibly hungry and also quite thoughtful about my grandma.
+    [10:56.90] 2: Me too. Seriously craving some mac and cheese now. Or maybe that beef stew. And now mashed potatoes are in the mix too.
+    [11:03.00] 1: I think Im leaning towards making tomato soup and grilled cheese this weekend. Keep it simple classic achievable.
+    [11:08.20] 2: Sounds perfect. Maybe I'll attempt the stew again. Wish me luck. Alright I think thats a good place to wrap up our chat about comfort food. Makes you feel warm just talking about it.
+    [11:16.80] 1: It really does. Thanks everyone for tuning in. Let us know your favorite comfort foods maybe leave a comment on our page.
+    [11:22.90] 2: Yeah wed love to hear them. What makes you feel cozy and cared for. Until next time take care and eat well maybe something comforting.
+    [11:29.60] 1: Bye everyone.
+    [11:30.50] 2: Bye.
+    `
+    const lyrics9 = parseLyric(lrc9);
+    dom.lyric9.innerHTML = lyrics9[0].text;
+    
+    dom.player9.ontimeupdate = () => {
+        const time = dom.player9.currentTime;
+        const index = syncLyric(lyrics9, time);
+
+        if (index == null) return;
+        dom.lyric9.innerHTML = lyrics9[index].text;
+    };
 
 };
